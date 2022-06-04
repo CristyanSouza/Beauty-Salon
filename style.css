@@ -99,7 +99,7 @@ header {
   height: var(--header-height);
   border-bottom: 1px solid #e4e4e4;
   display: flex;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 100;
   background-color: var(--background-color);
@@ -118,6 +118,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 
@@ -244,8 +245,8 @@ text-align: center;
 }
 #home .image {
   position: relative;
-
 }
+
 #home .image::before {
   content: '';
   background-color: var(--third-color);
@@ -259,7 +260,6 @@ text-align: center;
 
 #home .image::before, #home img {
   border-radius: 0.25rem;
-
 }
 
 .button {
@@ -578,6 +578,8 @@ nav ul li a {
 #home .container {
   display: flex;
   gap: 7.375rem;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -594,8 +596,9 @@ nav ul li a {
 #about .container {
   display: flex;
   gap: 4rem;
-  
+  align-items: center;
 }
+
 
 #about {
   padding-left: 0;
@@ -647,10 +650,6 @@ nav ul li a {
   :root {
     --font-size-title: 2.26rem;
     --font-size-subtitle: 1.125rem;
-  }
-
-  .section{
-    padding: 10rem
   }
 
 }
